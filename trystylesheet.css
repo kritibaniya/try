@@ -1,1 +1,432 @@
+*{
+  margin:0px;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+header{
+  height: 200px;
+}
+
+header img{
+  float: left;
+}
+
+header h1 {
+  font-size:3em;
+  text-align: center;
+  padding-top: 5vh;
+}
+hr{
+  height:4px;
+  border-width:0;
+  background-color: brown;
+}
+/* TEXTBOKS PÅ TOPPEN */
+.announcements{
+  box-sizing: border-box;
+  border: solid 5px #990033;
+  margin-top: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
+  height: 30vh;
+  border-radius: 10px;
+  padding: 20px;
+  line-height: 1.6;
+  font-size: 18px;
+  background-color: #f2f2f2;
+}
+
+.announcements h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+.covid {
+  box-sizing: border-box;
+  float: left;
+  height: auto;
+  width: 45%;
+}
+.update {
+  box-sizing: border-box;
+  float: right;
+  height: auto;
+  width: 45%;
+}
+#over {
+text-align: center;
+font-size: 2.7em;
+margin-top: 80px;
+}
+
+.end{
+  margin-top: 100px;
+  height: 35vh;
+  background-color: lightgrey;
+  padding: 25px;
+}
+.contact{
+  width: 45%;
+  height: auto;
+  float: left;
+}
+.contact ul{
+  list-style: none;
+  font-size: 1.3em;
+}
+.follow{
+  width: 45%;
+  height: auto;
+  float: right;
+}
+.follow td{
+  padding-top:10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 0;
+  font-size: 1.3em;
+
+}
+.follow a{
+  text-decoration: none;
+  color: black;
+}
+
+
+ @media screen and (max-width:1030px) {
+   .announcements{
+     margin-left: 200px;
+     width: 70vw;
+   }
+
+ }
+ @media screen and (max-width:870px) {
+   .announcements{
+     margin-left: 5vw;
+     margin-right: 5vw;
+     width: 90vw;
+     height: 35vh;
+     margin-top: 15%;
+   }
+   .contact{
+     width: 100%;
+   }
+   .contact ul{
+     font-size: 1.1em;
+   }
+   .follow{
+     margin-top: 15px;
+     width: 100%;
+   }
+   .follow td{
+     padding-top:5px;
+     padding-bottom: 5px;
+     font-size: 1.1em;
+   }
+ }
+ @media only screen and (max-width:620px) {
+   .announcements {
+     max-height: 100%;
+   }
+ }
+
+ @media only screen and (max-width:499px) {
+   .announcements {
+     margin-top: 70px;
+     max-height: 100%;
+     width: 90vw;
+   }
+   .follow {
+     margin-left: 50px;
+   }
+   header {
+     height: 192px;
+   }
+   header h1 {
+     font-size: 2.2em;
+   }
+   header img {
+     width: 38vw;
+   }
+ }
+
+ @media only screen and (max-width:437px) {
+   header img {
+     width: 45vw;
+   }
+ }
+
+ @media only screen and (max-width:356px) {
+   .announcements {
+     height: 40vh;
+     width: 100vw;
+   }
+   header {
+     height: 160px;
+   }
+   header h1 {
+     font-size: 1.7em;
+   }
+   header img {
+     width: 45vw;
+   }
+}
+ @media only screen and (max-width:288px) {
+   .announcements {
+     height: 38vh;
+     width: 130vw;
+   }
+   header {
+     height: 140px;
+   }
+   header h1 {
+     font-size: 1.5em;
+ }
+ .end {
+   width: 130vw;;
+ }
+ .follow {
+   margin-left: 0;
+   float: left;
+   font-size:
+ }
+}
+
+
+
+
+/* Navbare Menu start */
+.sidemeny {
+  height: auto;
+  width: 100%;
+  position: absolute;
+  font-size: 15px;
+  background-color: lightgrey;
+}
+
+.sidemeny ul {
+  list-style: none;
+  text-align: center;
+}
+
+.sidemeny li{
+display: inline-block;
+padding: 15px;
+}
+
+.sidemeny ul li:hover  {
+  background-color: grey;
+}
+
+.sidemeny ul li a {
+  text-decoration: none;
+  color: black;
+}
+label #sign-one,
+label #sign-two{
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 50px;
+  margin-right: 30px;
+  cursor: pointer;
+  display: none;
+}
+#res-menu {
+  display: none;
+}
+
+
+
+@media screen and (max-width: 1030px) {
+  .sidemeny{
+    height: 100%;
+    width: 175px;
+    position: absolute;
+    font-size: 1em;
+  }
+}
+@media screen and (max-width:870px) {
+
+  label #sign-one {
+    box-sizing: border-box;
+    padding-left: 20px;
+    display: block;
+    float: left;
+    background-color: lightgrey;
+    width: 100vw;
+}
+.sidemeny{
+  height: 0px;
+}
+.sidemeny ul li a{
+    color: black;
+    font-size: 0px;
+}
+.sidemeny ul{
+    position: absolute;
+    width: 80%;
+    height: auto;
+    background: lightgrey;
+    top: 50px;
+    left: -200%;
+    text-align:center;
+    transition: .5s;
+    z-index: 10;
+}
+.sidemeny ul li{
+    display: block;
+    margin: 40px 0;
+    font-weight: bold;
+    line-height: 30px;
+}
+.sidemeny ul li a{
+    font-size: 15px;
+}
+
+#res-menu:checked ~ ul{
+      left: 0;
+}
+#res-menu:checked ~ label #sign-one {
+  display: none;
+}
+#res-menu:checked ~ label #sign-two {
+  display: block;
+}
+}
+/* Navbar menu end */
+
+/* Start of degree boxes CSS */
+.container {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.container .box{
+  position: relative;
+  width: 25%;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+.container .box .icon {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  color: white;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 50%;
+  font-size: 40px;
+  font-weight: 700;
+  transition: 1s;
+}
+.container .box:nth-child(1) .icon {
+  box-shadow: 0 0 0 0 #990033;
+  background: #990033;
+}
+.container .box:nth-child(1):hover .icon {
+  box-shadow: 0 0 0 400px #ffcccc;
+}
+.container .box:nth-child(2) .icon {
+  box-shadow: 0 0 0 0 #990033;
+  background: #990033;
+}
+.container .box:nth-child(2):hover .icon {
+  box-shadow: 0 0 0 400px #ffcccc;
+}
+.container .box:nth-child(3) .icon {
+  box-shadow: 0 0 0 0 #990033;
+  background: #990033;
+}
+.container .box:nth-child(3):hover .icon {
+  box-shadow: 0 0 0 400px #ffcccc;
+}
+.container .box:nth-child(4) .icon {
+  box-shadow: 0 0 0 0 #990033;
+  background: #990033;
+}
+.container .box:nth-child(4):hover .icon {
+  box-shadow: 0 0 0 400px #ffcccc;
+}
+.container .box:nth-child(5) .icon {
+  box-shadow: 0 0 0 0 #990033;
+  background: #990033;
+}
+.container .box:nth-child(5):hover .icon {
+  box-shadow: 0 0 0 400px #ffcccc;
+}
+.container .box:nth-child(6) .icon {
+  box-shadow: 0 0 0 0 #990033;
+  background: #990033;
+}
+.container .box:nth-child(6):hover .icon {
+  box-shadow: 0 0 0 400px #ffcccc;
+}
+
+.container .box .content {
+  position: relative;
+  z-index: 1;
+  transition: 0.5s;
+}
+.container .box .content h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  padding: 0;
+  text-align: center;
+}
+.container .box .content ul {
+  font-size: 17px;
+  line-height: 1.5;
+}
+.container .box .content li:hover{
+  background-color: white;
+}
+.container .box .content a{
+  text-decoration: none;
+  color: black;
+
+}
+@media screen and (max-width:1030px){
+
+  .container {
+    margin-left: 200px;
+  }
+  .container .box{
+    width: 40%;
+  }
+@media screen and (max-width:870px){
+  .container{
+    margin-top:30px;
+    margin-left: 40px;
+  }
+  .container .box{
+    padding: 15px;
+  }
+}
+@media only screen and (max-width:499px) {
+  .container .box{
+    width: 100%;
+  }
+}
+@media only screen and (max-width:288px) {
+  .container {
+    width: 120vw;
+  }
+  #over {
+    text-align: center;
+    font-size: 1.9em;
+  }
+}
 
